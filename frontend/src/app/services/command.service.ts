@@ -7,7 +7,7 @@ import {catchError, Observable,first, tap} from 'rxjs'
   providedIn: 'root'
 })
 export class CommandService {
-  commandUrl = "http://192.168.43.161:3000/colombe/api/v0/command";
+  commandUrl = "https://colombe-api.onrender.com/colombe/api/v0/command";
   httpOptions : {headers :HttpHeaders} = {headers:new HttpHeaders({'content-Type':'application/json'})}
 
   constructor(

@@ -9,7 +9,7 @@ import { Bill } from '../interfaces/Bill';
   providedIn: 'root'
 })
 export class BillService {
-  billUrl = 'http://192.168.43.161:3000/colombe/api/v0/bill'
+  billUrl = 'https://colombe-api.onrender.com/colombe/api/v0/bill'
   httpOptions : {headers :HttpHeaders} = {headers:new HttpHeaders({'content-Type':'application/json'})}
 
   constructor(
